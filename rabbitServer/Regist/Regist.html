@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)file:///C:/Users/user/Documents/Tencent%20Files/236265530/FileRecv/manageViews/Regist/Regist.html -->
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Regist</title>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/flat-ui.min.css" rel="stylesheet">
+    <link href="RegistCss.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="rabbitIcon">
+            <img src="../Pictures/1.jpg" style="width:30%;">
+          </div>
+          <div class="row">
+            <div class="registPanel col-xs-8 col-xs-offset-2">
+            <form method="post">
+              <div class="login-form">
+                <div class="form-group">
+                  <input type="text" class="form-control flat" name="username" placeholder="放你想注册的账号欧！">
+                  <label class="login-field-icon fui-user" for="username" ></label>
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control flat" name="password" placeholder="悄悄把密码放在这里&gt; &lt;">
+                  <label class="login-field-icon fui-lock" for="password"></label>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control flat" name="nickname" placeholder="给自己起一个名字吧&gt; &lt;">
+                  <label class="login-field-icon fui-heart" for="nickname"></label>
+                </div>
+                <div class="form-group">
+                  <input type="date" class="form-control flat" name="birthday" placeholder="把生日填进来欧">
+                  <label class="login-field-icon fui-calendar" for="birthday"></label>
+                </div>
+                <label class="radio gender-radio">
+                  <input type="radio" name="sex" id="optionsRadios1" value="0" checked="">
+                  我是可爱的男孩纸
+                </label>
+                <label class="radio gender-radio">
+                  <input type="radio" name="sex" id="optionsRadios2" value="1" checked="">
+                  我是萌萌哒女孩纸
+                </label>
+                <label class="radio gender-radio">
+                  <input type="radio" name="sex" id="optionsRadios3" value="2" checked="">
+                  我..我不想和你说QAQ
+                </label>
+                <label class="checkbox" >
+                  <input type="checkbox" name="agreement">
+                  是否同意我们残酷的<a href="#" id="user-protocol">不平等条约</a>呢
+                </label>
+                <input class="btn btn-primary"  type="submit" name="clickToRegist" value="注册" />
+              </form>
+              </div>
+            </div>
+          </div>
+		</div>
+      </div>
+    </div>
+ </div>
+
+  </body>
+  <script src="../static/js/jquery-1.11.3.min.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+  <script src="../static/js/flat-ui.min.js"></script>
+  <script>
+    $(':radio').radiocheck();
+    $(':checkbox').radiocheck();
+  </script>
+</html>

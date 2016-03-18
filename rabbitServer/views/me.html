@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>chat</title>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="../static/css/flat-ui.min.css" rel="stylesheet"> 
+    <link href="../static/css/main.css" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="container" style="text-align:center">
+
+      <div class="row">
+        <div class="col-xs-12">
+          <img src="../static/img/RegistPic.jpg" id="head" />
+        </div>
+        <div class="col-xs-12">
+          <p class="sm" id="username" style="font-size:1.4em;">屁屁兔</p>
+          <p class="sm" id="birthday">1999.99.99</p>
+          <p class="sm" id="signature">我的屁股好大好圓~</p>
+          <button class="btn btn-primary" style="width:50%;margin-top:2em;">修改資料</button>
+          <span class="fui-settings"></span>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container" style="text-align:center;font-size:1.3em;">
+          <div class="row">
+            <div id="registPanel"class="col-xs-4 nav-icon">
+              <span class="fui-chat nav-unactive"></span>
+            </div>
+            <div id="registPanel"class="col-xs-4 nav-icon">
+              <span class="fui-user nav-unactive"></span>
+            </div>
+            <div id="registPanel"class="col-xs-4 nav-icon">
+              <span class="fui-home nav-active"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    </div>
+  </body>
+  <script src="../static/js/jquery-1.11.3.min.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+  <script src="../static/js/flat-ui.min.js"></script>
+  <script>
+  $(function(){
+	$.ajax({
+		type:"GET",
+		url:"me.json",
+		dataType:"json",
+		success:function(data){
+				var arr = eval(data);
+				for(var i = 0;i < arr.length;i++)
+				{
+					var user_id = arr[i].user_id;
+					var user_name = arr[i].user_name;
+					var user_sex = arr[i].user_sex;
+					var user_bithday = arr[i].user_borthday;
+					var user_signature = arr[i].user_signature;
+					var user_head_protrait = arr[i].user_head_protrait;		
+					alert(arr[i].user_id);
+					alert(arr[i].user_name);
+					alert(arr[i].user_sex);
+					alert(arr[i].user_borthday);
+					alert(arr[i].user_signature);
+					alert(arr[i].user_head_protrait);
+				}
+			}
+		})
+	});
+  </script>
+</html>

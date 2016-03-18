@@ -1,0 +1,16 @@
+{
+  "name": "rabbit",
+  "version": "1.0.0",
+  "description": "the socket part for rabbit",
+  "main": "server.js",
+  "dependencies": {
+    "socket.io": "^1.3.7",
+    "mysql": "^2.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "no-brest-heaven",
+  "license": "ISC"
+}

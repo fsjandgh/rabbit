@@ -1,0 +1,69 @@
+* {
+    font-family:"Microsoft YaHei UI Light";
+}
+.container{
+    text-align:center;
+}
+#rabbitIcon{
+    margin-top:5em;
+    width:100%;
+}
+.registPanel{
+    border-radius:16px;
+    background-color:#ECF0F1;
+    padding:8px;
+}
+h2{
+    margin-bottom:20px;
+    font-weight:normal;
+    color:#EFEFEF;
+}
+.radio{
+	text-align:left;
+	}
+.gender-radio{
+	color:#bdb9c7;
+	margin-bottom:0px;
+	padding-left:22px;
+	font-weight:normal;
+	}
+.checkbox{
+    top:1em;
+	text-align:left;
+	color:#bdb9c7;
+	margin:0px;
+	padding-left:22px;
+	font-weight:normal;
+	}
+input[type=checkbox], input[type=radio]{
+	margin:-12px 0 0;
+	line-height:normal;
+	}
+.icon{
+    background-color:#fff;
+    height:3em;
+    border-radius:0 8px 8px 0 !important;
+	}
+#user-protocol{
+	color:#BDC3C7;
+	text-decoration:underline;
+	font-weight:bold;
+	}
+.btn{
+    margin-top:2em;
+    width:100%;
+    border-radius:8px !important;
+}
+.login-form{
+    padding:0px;
+}
+.flat{
+    border-radius:10px;
+    height:3.5em;
+}
+.login-field-icon{
+    margin-top:7px;
+}
+.form-group{
+    margin-bottom:5px;
+}

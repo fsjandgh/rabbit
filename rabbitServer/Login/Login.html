@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Login</title>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="LoginCss.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-xs-12">
+          <div id="rabbitIcon">
+            <img src="../Pictures/4.jpg"style="width:30%;"/>
+          </div>
+          <div class="row">
+            <div class = "loginPanel col-xs-10 col-xs-offset-1">
+              <form method="post" name="login-form">
+                <div class="input-group">
+                  <input type="username" class="form-control no_rightBorder input " name="username" placeholder="用户名放在这里">
+                  <span class="icon input-group-addon"><span class="glyphicon glyphicon-user"style="color:#bdb9c7"></span></span>
+                </div>
+                <div class="input-group">
+                  <input type="password" class="form-control input no_rightBorder" name="password" placeholder="密码就丢在这里吧><">
+                  <span class="icon input-group-addon"><span class="glyphicon glyphicon-lock"style="color:#bdb9c7"></span></span>
+                </div>
+                <input name="clickToLogin" type="submit" class="btn btn-success" value="登录"/ >
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div id="forgetPanel"class="col-xs-11">
+              <a href="#" id="forget">忘记密码？</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+      <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+          <div class="row">
+            <div id="registPanel"class="col-xs-12">
+              <a href="../Regist/regist.php" id="regist">点这里注册噢：）</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    </body>
+    <script src="../static/js/jquery-1.11.3.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+  </html>
